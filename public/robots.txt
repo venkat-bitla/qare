@@ -1,0 +1,4 @@
+# http://www.robotstxt.org
+Sitemap: https://qare.com/sitemap-index.xml
+User-agent: *
+Disallow:

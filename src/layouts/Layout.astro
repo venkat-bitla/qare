@@ -1,0 +1,112 @@
+---
+const { title } = Astro.props;
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+import Ascii from "../components/Ascii.astro";
+import Header from "../components/Header.astro";
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+import "aos/dist/aos.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="qare - Simple Scheduling for Busy Clinics"
+    />
+    <meta
+      name="description"
+      content="Qare is a modern OPD management and scheduling platform for Indian clinics. Streamline appointments, manage tokens, send automated WhatsApp updates, and enable QR-based patient check-ins—all in one simple, powerful system. Clinic Flow, Simplified."
+    />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://qare.in" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://qare.in" />
+    <meta
+      property="og:title"
+      content="qare - Simple Scheduling for Busy Clinics"
+    />
+    <meta
+      property="og:description"
+      content="Qare is a modern OPD management and scheduling platform for Indian clinics. Streamline appointments, manage tokens, send automated WhatsApp updates, and enable QR-based patient check-ins—all in one simple, powerful system. Clinic Flow, Simplified."
+    />
+    <meta property="og:image" content="https://qare.in/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://qare.in" />
+    <meta
+      property="twitter:title"
+      content="qare - Simple Scheduling for Busy Clinics"
+    />
+    <meta
+      property="twitter:description"
+      content="Qare is a modern OPD management and scheduling platform for Indian clinics. Streamline appointments, manage tokens, send automated WhatsApp updates, and enable QR-based patient check-ins—all in one simple, powerful system. Clinic Flow, Simplified."
+    />
+    <meta
+      property="twitter:image"
+      content="https://qare.in/twitter-image.png"
+    />
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "qare",
+        "description": "Qare is a modern OPD management and scheduling platform for Indian clinics. Streamline appointments, manage tokens, send automated WhatsApp updates, and enable QR-based patient check-ins—all in one simple, powerful system. Clinic Flow, Simplified.",
+        "url": "https://qare.in",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "49",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2025-12-31"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "qare"
+        }
+      }
+    </script>
+    <link rel="icon" type="image/svg" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDYGZ2RYMF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BDYGZ2RYMF");
+    </script>
+    <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"/>
+    <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"/>
+    <title>{title}</title>
+  </head>
+<body
+  class="font-inter text-sm sm:text-base lg:text-lg text-gray-800 bg-gray-50 antialiased font-feature-default min-h-screen flex flex-col"
+>
+  <Ascii />
+  <div class="min-h-screen w-full relative">
+    <div class="absolute inset-0 z-0">
+    <Header class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" />
+    <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+    <Footer />
+  </div>
+</body>
+<script>
+    import AOS from "aos";
+    AOS.init();
+  </script>    
+ </script>
+</html>
