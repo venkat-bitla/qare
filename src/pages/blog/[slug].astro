@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: {
+      post,
+    },
+  }));
+}
+
+const { post } = Astro.props;
+const { title, summary, createdDate, tags } = post.data;
+const { Content } = await post.render();
+
+const posts = await getCollection("blog");
+
+const sortedPosts = posts.sort((a, b) => {
+  return +new Date(b.data.createdDate) - +new Date(a.data.createdDate);
+});
+
+const index = sortedPosts.findIndex((c: any) => {
+  return c.slug == post.slug;
+});
+
+const prev = index == 0 ? undefined : sortedPosts[index - 1];
+const next =
+  index == sortedPosts.length - 1 ? undefined : sortedPosts[index + 1];
+---
+
+<Layout props={{ title: title}}>
+  <section class="mt-20">
+    <div class="max-w-5xl mx-auto py-10 px-10">
+      <h1 class="text-4xl text-center font-space my-5 font-bold">{title}</h1>
+      <div class="text-center">
+        {
+          tags.map((t) => {
+            return (
+              <small>
+                <i>#{t}</i>
+              </small>
+            );
+          })
+        }
+      </div>      
+      <div class="markdown p-5 bg-gray-50 my-5 text-base">
+        <Content />
+      </div>
+      <small>{createdDate}</small>
+      <div class="flex justify-center">
+        {
+          prev && (
+            <a class="hover:underline" href={`/blog/${prev.slug}`}>
+              &larr; {prev.data.title}
+            </a>
+          )
+        }
+        {
+          next && (
+            <a class="hover:underline" href={`/blog/${next.slug}`}>
+              {next.data.title} &rarr;
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

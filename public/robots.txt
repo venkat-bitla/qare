@@ -1,4 +1,4 @@
 # http://www.robotstxt.org
-Sitemap: https://qare.com/sitemap-index.xml
+Sitemap: https://qare.in/sitemap-index.xml
 User-agent: *
 Disallow:
