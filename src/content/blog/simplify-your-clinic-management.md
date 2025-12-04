@@ -3,7 +3,7 @@ title: Simplify Your Clinic Management with Smart Digital Tools
 createdDate: "2025-05-08"
 modifiedDate: "2025-05-08"
 tags: ["clinic management software", "digital healthcare India", "online doctor booking", "medical practice management","patient management system"]
-summary: "Simplify Your Clinic Management with Smart Digital Tools"
+summary: "Qare.in offers a smart, intuitive clinic management system that helps doctors streamline operations, enhance patient experience, and improve productivity all from a single dashboard."
 ---
 
 # Simplify Your Clinic Management with Smart Digital Solutions
