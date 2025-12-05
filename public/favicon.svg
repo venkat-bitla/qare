@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <ellipse cx="18" cy="18" rx="1" ry="1" fill="rgb(142,81,255)" />
-  <circle cx="12" cy="12" r="5" fill="none" stroke-width="3" stroke="rgb(142,81,255)" />
+<svg xmlns="http://www.w3.org/2000/svg" transform="rotate(270 0 0)" class="w-5 h-5 text-brand mt-3 mx-1" viewBox="0 0 24 24" fill="none" stroke="rgb(142,81,255)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  <path d="M8 12h8"/>
+  <path d="M12 8v8"/>
 </svg>
