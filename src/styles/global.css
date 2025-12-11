@@ -1,3 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .md {
+    @apply text-gray-800 leading-relaxed max-w-none;
+
+    h1 { @apply text-4xl font-bold mt-8 mb-4; }
+    h2 { @apply text-3xl font-semibold mt-10 mb-4; }
+    h3 { @apply text-2xl font-semibold mt-8 mb-3; }
+    h4 { @apply text-xl font-semibold mt-6 mb-2; }
+
+    p { @apply my-4; }
+    a { @apply text-blue-600 hover:text-blue-700 underline; }
+
+    ul { @apply list-disc pl-6 my-4; }
+    ol { @apply list-decimal pl-6 my-4; }
+    li { @apply my-1; }
+
+    blockquote { @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6; }
+
+    code { @apply bg-gray-100 text-gray-900 px-1 py-0.5 rounded; }
+    pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6; }
+    pre code { @apply bg-transparent text-inherit p-0; }
+
+    img { @apply rounded-lg shadow-md my-6; }
+
+    table { @apply w-full border-collapse my-6; }
+    th { @apply bg-gray-100 border px-3 py-2 text-left font-semibold; }
+    td { @apply border px-3 py-2; }
+
+    hr { @apply my-10 border-gray-300; }
+
+    .callout { @apply p-4 border-l-4 rounded-md my-6; }
+    .callout-info { @apply border-blue-500 bg-blue-50 text-blue-700; }
+    .callout-warning { @apply border-yellow-500 bg-yellow-50 text-yellow-700; }
+    .callout-success { @apply border-green-500 bg-green-50 text-green-700; }
+    .callout-danger { @apply border-red-500 bg-red-50 text-red-700; }
+  }
+}
+
 .text-transparent {
   color: transparent;
 }
