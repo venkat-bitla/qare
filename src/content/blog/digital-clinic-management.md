@@ -8,7 +8,7 @@ summary: "Qare.in offers a smart, intuitive clinic management system that helps 
 
 ## Power Your Clinic with Smart Digital Management Tools
 
-Running a clinic efficiently means balancing patient care with daily administrative tasks. With smart digital solutions from **Qare**, clinics can eliminate paperwork, reduce errors, and operate seamlessly—all from one platform.
+Running a clinic efficiently means balancing patient care with daily administrative tasks. With smart digital solutions from **Qare**, clinics can eliminate paperwork, reduce errors, and operate seamlessly - all from one platform.
 
 ### Why Choose Digital Clinic Management?
 Manual processes slow clinics down and affect patient satisfaction. Qare helps you:
@@ -18,7 +18,7 @@ Manual processes slow clinics down and affect patient satisfaction. Qare helps y
 - Send timely reminders and follow-ups  
 
 ### Designed for Modern Clinics
-Qare’s intuitive clinic management system simplifies everyday operations so doctors and staff can focus on what matters most—quality healthcare.
+Qare’s intuitive clinic management system simplifies everyday operations so doctors and staff can focus on what matters most - quality healthcare.
 
 ### Upgrade Your Clinic with Qare
 Join clinics that are transforming their practice with smart digital tools. Improve efficiency, enhance patient experience, and grow your clinic with **Qare**.

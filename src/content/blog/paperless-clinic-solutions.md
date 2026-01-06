@@ -39,7 +39,7 @@ Digital systems can send **automatic reminders for appointments, medications, an
 
 ## Why Qare is Perfect for Paper-Based Clinics
 
-**Qare** is an all-in-one clinic management platform designed to help doctors transition smoothly from paper to digital. It streamlines appointments, patient records, billing, and communication—all in one secure dashboard.
+**Qare** is an all-in-one clinic management platform designed to help doctors transition smoothly from paper to digital. It streamlines appointments, patient records, billing, and communication - all in one secure dashboard.
 
 ### Benefits You’ll See Immediately
 - Save hours of administrative work  
