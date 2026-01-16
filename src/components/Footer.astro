@@ -2,13 +2,12 @@
 
 ---
 
-<footer class="py-10 border-t w-full text-gray-800 bg-gray-50">
+<footer class="py-10 border-t w-full text-gray-800 bg-gray-100">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:justify-between gap-10 md:gap-16">
-      
+    <div class="flex w-full">
       <!-- Footer Left (Logo + Social) -->
-      <div class="flex-1 md:text-left">
-        <div class="max-w-[250px]">
+      <div>
+        <div>
           <a href="/" class="flex mx-2 md:justify-start gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-brand mt-3.5"  viewBox="0 0 512 512"  fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
               <path d="M506 256c0 59.963-21.113 114.994-56.306 158.069l48.806 48.806S506 469.75 506 481s-10 25-25 25H256C117.931 506 6 394.069 6 256 6 117.931 117.931 6 256 6c138.069 0 250 111.931 250 250zM256 406c82.844 0 150-67.156 150-150s-67.156-150-150-150-150 67.156-150 150 67.156 150 150 150z" fill="currentColor"/>
@@ -24,78 +23,66 @@
       </div>
 
       <!-- Footer Links -->
-      <div class="grid grid-cols-2 justify-between">
+      <div class="ml-auto w-fit gap-10 flex justify-end">
         <div>
           <h2 class="font-bricolage tracking-wider text-md font-semibold mb-3">Product</h2>
           <ul class="space-y-2">
             <li><a href="/" class="hover:underline">Home</a></li>
             <li><a href="/pricing" class="hover:underline">Pricing</a></li>
             <li><a href="/blog" class="hover:underline">Blog</a></li>
-            <!-- <li><a href="/contact" class="hover:underline">Contact</a></li> -->
           </ul>
         </div>
-        <div class="">
-          <h2 class="font-bricolage tracking-wider text-md font-semibold mb-3">Legal</h2>
+
+        <div>
+          <h2 class="font-bricolage tracking-wider text-md font-semibold mb-3">Social</h2>
           <ul class="space-y-2">
-            <li><a href="/terms" class="hover:underline">Terms of services</a></li>
-            <li><a href="/privacy" class="hover:underline">Privacy Policy</a></li>
+            <li>
+              <a href="https://x.com/qarehq" target="_blank" class="flex hover:underline">
+                LinkedIn 
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-3 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>                
+              </a>
+          </li>
+            <li>
+              <a  href="https://www.linkedin.com/company/qare-in/" target="_blank" class="flex hover:underline">
+                Twitter
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-3 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>                 
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+
     </div>
-    <div class="flex justify-between my-10">
-      <!-- Social Icons -->
-      <ul class="flex justify-center md:justify-start gap-4 pt-2">
-        <li>
-          <a
-            href="https://x.com/qarehq"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <svg
-              class="h-8 w-8"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.641 5.70508H19.095L13.735 11.6351L20.041 19.7051H15.103L11.236 14.8111L6.81102 19.7051H4.35602L10.09 13.3621L4.04102 5.70508H9.10302L12.599 10.1791L16.641 5.70508Z"
-                fill="#8D95A5"
-              ></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/company/qare-in/"
-            aria-label="LinkedIn"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <svg
-              class="h-8 w-8"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 7.70508C4 6.04808 5.343 4.70508 7 4.70508H17C18.657 4.70508 20 6.04808 20 7.70508V17.7051C20 19.3621 18.657 20.7051 17 20.7051H7C5.343 20.7051 4 19.3621 4 17.7051V7.70508ZM8.85 18.0981V10.8741H6.434V18.0981H8.85ZM7.642 9.88708C8.484 9.88708 9.009 9.33308 9.009 8.63908C8.993 7.93008 8.484 7.39108 7.658 7.39108C6.831 7.39108 6.291 7.93008 6.291 8.63908C6.291 9.33308 6.815 9.88708 7.626 9.88708H7.642ZM12.604 18.0981V14.0641C12.604 13.8481 12.62 13.6331 12.683 13.4781C12.858 13.0471 13.256 12.6001 13.923 12.6001C14.798 12.6001 15.148 13.2621 15.148 14.2341V18.0981H17.564V13.9561C17.564 11.7371 16.372 10.7041 14.782 10.7041C13.5 10.7041 12.925 11.4041 12.604 11.8971V10.8741H10.187C10.219 11.5491 10.188 18.0571 10.187 18.0991L12.604 18.0981Z"
-                fill="#8D95A5"
-              ></path>
-            </svg>
-          </a>
-        </li>
-      </ul> 
-      <div class="w-full text-center">  
-        <p class="text-gray-400 mt-5">
-          <span class="h3 mx-3 text-gray-500">✦</span> 
+    <div class="grid grid-cols-2 gap-4 my-10">
+      <div class="lg:flex gap-3">
+        <div>
           © 2025
           <a href="https://qare.in" class="hover:underline">
-            qare
+            Qare. 
           </a>
-        </p>    
-      </div>     
+          <span>All rights reserved.</span>
+        </div>
+        <div class="lg:flex gap-2">
+          <div>
+            <span class="text-gray-500">✦</span> 
+            <a href="/terms" class="hover:underline">Terms of services</a>
+          </div>
+          <div>
+            <span class="text-gray-500">✦</span> 
+            <a href="/privacy" class="hover:underline">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end">
+        MADE IN INDIA 🇮🇳
+      </div>
     </div>
+
   </div>
 </footer>
